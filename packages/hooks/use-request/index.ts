@@ -1,22 +1,22 @@
-import { ref, onMounted, watch, ComputedRef } from 'vue'
+import { ref, onMounted, watch, WatchSource } from 'vue'
 
 type Service<TData> = {
   (...args: any): Promise<TData>
 }
 
-type Options = {
+type Options<T> = {
   manual?: boolean
-  refreshDeps?: ComputedRef
-  onSuccess?: (data: any) => void
+  refreshDeps?: WatchSource[] | any
+  onSuccess?: (data?: T) => void
   onError?: (e: Error) => void
   errorToast?: boolean
-  formatResult?: <T>(args: T) => T
+  formatResult?: (data: T) => any
 }
 
 export function useRequest<TData>(
   requestFn: Service<TData>,
-  options: Options = {}
-): any {
+  options: Options<TData> = {}
+) {
   const {
     manual = false,
     refreshDeps = [],
@@ -25,7 +25,7 @@ export function useRequest<TData>(
     errorToast = true,
     formatResult = data => data,
   } = options
-  const result = ref()
+  const result = ref<TData>()
   const params = ref({})
 
   async function run(...args: any): Promise<void> {

@@ -1,20 +1,31 @@
 <template>
-  <div>请求一：{{ result1 }}</div>
+  <div>自动请求：{{ result1 }}</div>
   <div>
-    请求二：{{ result2 }}
-    <button @click="getResult2">获取</button>
+    成功请求：{{ success }}
+    <button @click="getSuccessResult">获取</button>
   </div>
-  <div>请求三：{{ result3 }}</div>
+  <div>
+    错误请求：{{ error }}
+    <button @click="getErrorResult">获取</button>
+  </div>
 </template>
 
 <script setup lang="ts">
+  import { ref, computed } from 'vue'
   import { useRequest } from '../index'
 
-  function getData() {
-    return new Promise(() => {
+  const error = ref()
+
+  function getData(
+    option: { isError: boolean } = { isError: false }
+  ): Promise<string> {
+    return new Promise((resolve, reject) => {
       setTimeout(() => {
-        console.log(`getData${new Date()}`)
-        return `getData${new Date()}`
+        if (option.isError) {
+          reject('getDataError')
+        } else {
+          resolve(`getData：${new Date()}`)
+        }
       })
     })
   }
@@ -22,14 +33,26 @@
   // 常规请求
   const { result: result1 } = useRequest(getData)
 
-  // 手动请求
-  const { result: result2, run: getResult2 } = useRequest(getData, {
+  const f = ref(true)
+  setTimeout(() => (f.value = false), 1000)
+
+  // 成功回调
+  const { result: success, run: getSuccessResult } = useRequest(getData, {
+    refreshDeps: computed(() => f.value),
     manual: true,
+    onSuccess(data) {
+      console.log('success：', data)
+    },
+    formatResult(data) {
+      return 'format：' + data
+    },
   })
 
-  const { result: result3 } = useRequest(getData, {
-    onSuccess(data) {
-      console.log('result3', data)
+  // 错误回调
+  const { run: getErrorResult } = useRequest(() => getData({ isError: true }), {
+    manual: true,
+    onError(err) {
+      error.value = err
     },
   })
 </script>
