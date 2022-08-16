@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
   import { ref, computed } from 'vue'
-  import { useRequest } from '../index'
+  import { useRequest } from '../../index'
 
   const error = ref()
 
