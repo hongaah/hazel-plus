@@ -9,6 +9,11 @@ const components = [
     name: 'popup-bottom',
     component: () => import('@/components/popup-bottom/demo/demo.vue'),
   },
+  {
+    path: '/components/dialog-confirm',
+    name: 'dialog-confirm',
+    component: () => import('@/components/dialog-confirm/demo/demo.vue'),
+  },
 ]
 
 export default components

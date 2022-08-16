@@ -24,8 +24,8 @@
 
 <script setup lang="ts">
   interface Props {
-    showCloseIcon: boolean
-    title: string
+    showCloseIcon?: boolean
+    title?: string
   }
   const { showCloseIcon = false, title = '' } = defineProps<Props>()
 
