@@ -1,8 +1,15 @@
 {
-  "name": "hazel-ui",
-  "private": true,
-  "version": "0.0.0",
+  "name": "hazel-plus",
+  "private": false,
+  "version": "0.0.4",
+  "main": "dist/hooks/index.es.js",
+  "module": "dist/hooks/index.cjs.js",
+  "types": "dist/types/packages/hooks/index.d.ts",
   "type": "commonjs",
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "scripts": {
     "initial": "initial-scan .docs -srcDir packages",
     "docs:dev": "vitepress dev docs",
@@ -10,6 +17,7 @@
     "docs:serve": "vitepress serve docs",
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
+    "type": "vue-tsc",
     "preview": "vite preview",
     "eslint": "eslint src --ext .ts"
   },
@@ -28,10 +36,12 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
+    "hazel-plus": "^0.0.4",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
+    "vite-plugin-dts": "^1.4.1",
     "vitepress": "1.0.0-alpha.9",
     "vue-router": "^4.1.3",
     "vue-tsc": "^0.38.4"
