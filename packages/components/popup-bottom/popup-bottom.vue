@@ -3,12 +3,12 @@
   <div class="bottom-confirm">
     <div class="dialog-mask" @click.stop="handleClose"></div>
     <div class="bottom-confirm-content animate-animated animate-slideInUp">
-      <img
+      <!-- <img
         v-if="showCloseIcon"
         @click.stop="handleClose"
         class="icon-close"
         src="@/icons/icon-close-gray.png"
-      />
+      /> -->
       <div v-if="title" class="popup-title">
         <span>{{ title }}</span>
       </div>

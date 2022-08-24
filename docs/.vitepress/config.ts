@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { version } from '../../package.json'
 import { applyPlugins } from '@vue-hooks-plus/md-demo-plugins'
 import { genTemp } from '@vue-hooks-plus/vite-plugin-gen-temp'
 
@@ -7,12 +8,13 @@ const { resolve } = require('path')
 export default defineConfig({
   title: 'Hazel UI',
   description: 'A custom components and hooks Library based on Vue 3',
-  lang: 'zh-cn',
+  lang: 'zh-CN',
   head: [
     [
       'link',
       {
         rel: 'icon',
+        type: 'image/svg+xml',
         href: 'favicon.ico',
       },
     ],
@@ -28,8 +30,10 @@ export default defineConfig({
     sidebar: {
       '/': getSidebar(),
     },
-    lastUpdatedText: '最近更新',
+
     // @ts-ignore
+    lastUpdated: true,
+    lastUpdatedText: '最近更新',
     prevLink: true,
     nextLink: true,
     docFooter: {
@@ -42,6 +46,11 @@ export default defineConfig({
         link: 'https://github.com/hongaah/hazel-ui',
       },
     ],
+    search: true,
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2022-present',
+    },
   },
   vite: {
     // plugins: [genTemp()],
@@ -52,6 +61,7 @@ export default defineConfig({
     },
   },
   markdown: {
+    lineNumbers: true,
     // config: md => {
     //   applyPlugins(md)
     // },
@@ -66,6 +76,7 @@ function getSidebar() {
   return [
     {
       text: '介绍',
+      collapsible: true,
       items: [
         {
           text: '快速安装',
@@ -75,6 +86,7 @@ function getSidebar() {
     },
     {
       text: 'useRequest',
+      collapsible: true,
       items: [
         {
           text: '快速使用',
