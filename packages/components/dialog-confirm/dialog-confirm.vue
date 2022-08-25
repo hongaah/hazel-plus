@@ -17,7 +17,7 @@
 </template>
 
 <script setup lang="ts">
-  interface Props {
+  export interface Props {
     isShowTip: boolean
     content?: string
     confirmBtn?: string

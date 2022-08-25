@@ -12,7 +12,11 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "outDir": "./.type"
+    "outDir": "./.type",
+    "declaration": true,
+    "allowSyntheticDefaultImports": true
+    // "emitDeclarationOnly": true,
+    // "declarationDir": "./.type"
   },
   "base": ".",
   "root": "./",

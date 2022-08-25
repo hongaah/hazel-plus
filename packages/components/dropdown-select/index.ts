@@ -1,4 +1,3 @@
-// import { withInstall } from '@/utils/vue/install'
 import { withInstall } from '../../utils/vue/install'
 
 import DropdownSelect from './dropdown-select.vue'

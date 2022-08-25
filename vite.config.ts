@@ -12,6 +12,8 @@ export default defineConfig({
     }),
     dts({
       outputDir: './dist/types',
+      skipDiagnostics: false,
+      logDiagnostics: true,
     }),
   ],
   resolve: {
@@ -22,11 +24,11 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'packages/hooks'),
+      entry: resolve(__dirname, 'packages'),
       name: 'hazel',
       formats: ['cjs', 'es'],
       fileName: format => {
-        return `hooks/index.${format}.js`
+        return `js/index.${format}.js`
       },
     },
     rollupOptions: {

@@ -37,7 +37,8 @@
 </template>
 
 <script setup lang="ts">
-  import { HazelPopupBottom } from '../../index'
+  // import { HazelPopupBottom } from '../../index'
+  import { HazelPopupBottom } from 'hazel-plus'
   import { ref } from 'vue'
 
   const showSecondaryConfirm = ref(false)

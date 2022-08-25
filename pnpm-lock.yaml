@@ -12,7 +12,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.3.0
-  hazel-plus: ^0.0.4
+  hazel-plus: ^0.0.6
   prettier: ^2.7.1
   sass: ^1.54.4
   typescript: ^4.6.4
@@ -38,7 +38,7 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.21.0
   eslint-plugin-prettier: 4.2.1_h62lvancfh4b7r6zn2dgodrh5e
   eslint-plugin-vue: 9.3.0_eslint@8.21.0
-  hazel-plus: 0.0.4
+  hazel-plus: 0.0.6
   prettier: 2.7.1
   sass: 1.54.4
   typescript: 4.7.4
@@ -1580,8 +1580,8 @@ packages:
       function-bind: 1.1.1
     dev: true
 
-  /hazel-plus/0.0.4:
-    resolution: {integrity: sha512-gbDTZKEgcmUoA0EhwHtKoTKB+qlBwaHeLBsCZE1/zBYPDJ9OtLoVpy19m3adHjCzM5r1ZTtnKn8JVQO9sHdrmw==}
+  /hazel-plus/0.0.6:
+    resolution: {integrity: sha512-lcPCTDhE0a8cd0tWheege97+JlnzyYAb0jqxfeq+K3Ji6fFiqQbngs2DQrzQKP3yEuFBzMCsEvlY37iqGiGw2Q==}
     dependencies:
       vue: 3.2.37
     dev: true

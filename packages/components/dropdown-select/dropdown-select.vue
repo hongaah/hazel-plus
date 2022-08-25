@@ -37,12 +37,12 @@
 <script setup lang="ts">
   import { ref, computed } from 'vue'
 
-  interface Options {
+  export interface Options {
     value: string
     label: string
   }
 
-  interface Props {
+  export interface Props {
     selectOption: Options[] // 格式：[{ value: '', label: '' }]
     selected: string // 当前选择的值
     foldIcon?: string // 选择器的收起图标

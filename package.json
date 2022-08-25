@@ -1,10 +1,10 @@
 {
   "name": "hazel-plus",
   "private": false,
-  "version": "0.0.4",
-  "main": "dist/hooks/index.es.js",
-  "module": "dist/hooks/index.cjs.js",
-  "types": "dist/types/packages/hooks/index.d.ts",
+  "version": "0.0.6",
+  "main": "dist/js/index.es.js",
+  "module": "dist/js/index.cjs.js",
+  "types": "dist/types/packages/index.d.ts",
   "type": "commonjs",
   "files": [
     "dist",
@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
-    "hazel-plus": "^0.0.4",
+    "hazel-plus": "^0.0.6",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "typescript": "^4.6.4",
@@ -52,5 +52,13 @@
         "@algolia/client-search"
       ]
     }
+  },
+  "keywords": [
+    "ui",
+    ""
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongaah/hazel-ui"
   }
 }

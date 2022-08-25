@@ -26,8 +26,10 @@
 </template>
 
 <script setup lang="ts">
-  import { HazelDialogConfirm } from '../../index'
-  import { HazelDialogConfirm as HazelDialogCustom } from '../../index'
+  // import { HazelDialogConfirm } from '../../index'
+  // import { HazelDialogConfirm as HazelDialogCustom } from '../../index'
+  import { HazelDialogConfirm } from 'hazel-plus'
+  import { HazelDialogConfirm as HazelDialogCustom } from 'hazel-plus'
   import { ref } from 'vue'
 
   const isShowBasicDialog = ref(false)
