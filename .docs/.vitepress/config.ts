@@ -25,7 +25,7 @@ export default defineConfig({
     logo: 'favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Hooks', link: '/useRequest/' },
+      { text: 'Hooks', link: '/useRequest' },
     ],
     sidebar: {
       '/': getSidebar(),

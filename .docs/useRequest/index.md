@@ -1,7 +1,7 @@
 ---
 map:
-  # 映射到docs的路径
   path: /useRequest/
+realPath: packages/hooks/use-request/index.md
 ---
 
 # useRequest
