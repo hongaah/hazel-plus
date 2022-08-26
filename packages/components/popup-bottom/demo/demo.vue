@@ -37,9 +37,8 @@
 </template>
 
 <script setup lang="ts">
-  import { HzPopupBottom } from '../../index'
-  // import { HzPopupBottom } from 'hazel-plus'
-  // import { HzPopupBottom } from '@hazel-plus/ui' // TODO
+  // import { HzPopupBottom } from '../../index'
+  import { HzPopupBottom } from 'hazel-plus'
 
   import { ref } from 'vue'
 

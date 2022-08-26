@@ -1,39 +1,26 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "target": "es2018",
+    "module": "esnext",
+    "baseUrl": ".",
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "allowJs": false,
     "strict": true,
     "jsx": "preserve",
-    "sourceMap": true,
+    "noUnusedLocals": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "outDir": "./.type",
-    "declaration": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["unplugin-vue-define-options"]
-    // "emitDeclarationOnly": true,
-    // "declarationDir": "./.type"
+    "esModuleInterop": true,
+    "removeComments": false,
+    "rootDir": ".",
+    "types": ["unplugin-vue-define-options"],
+    "outDir": "./.type",
+    "paths": {
+      "@/*": ["packages/*"],
+      "@hazel-plus/*": ["packages/*"],
+      "hazel-plus": ["packages/hazel-plus/index.ts"]
+    }
   },
-  "base": ".",
-  "root": "./",
-  "paths": {
-    "@": ["./packages/*"],
-    "@hazel-plus": ["./packages/*"],
-    "@hazel-plus/ui": ["./packages/components/*"],
-    "@hazel-plus/hook": ["./packages/hooks/*"]
-  },
-  "include": [
-    "examples",
-    "packages/**/*.ts",
-    "packages/**/*.d.ts",
-    "packages/**/*.tsx",
-    "packages/**/*.vue",
-    "vite-env.d.ts"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["packages", "typings/components.d.ts", "typings/env.d.ts", "docs"]
 }

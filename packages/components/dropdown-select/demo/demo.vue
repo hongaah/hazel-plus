@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-  import { HzDropdownSelect } from '../../index'
-  // import { HzDropdownSelect } from 'hazel-plus'
+  // import { HzDropdownSelect } from '../../index'
+  import { HzDropdownSelect } from 'hazel-plus'
   import { ref } from 'vue'
 
   const selected = ref('carrot')

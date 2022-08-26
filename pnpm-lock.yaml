@@ -16,7 +16,6 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.3.0
-  hazel-plus: ^0.0.6
   prettier: ^2.7.1
   sass: ^1.54.4
   typescript: ^4.6.4
@@ -47,7 +46,6 @@ devDependencies:
   eslint-config-prettier: 8.5.0_eslint@8.22.0
   eslint-plugin-prettier: 4.2.1_i2cojdczqdiurzgttlwdgf764e
   eslint-plugin-vue: 9.4.0_eslint@8.22.0
-  hazel-plus: 0.0.6
   prettier: 2.7.1
   sass: 1.54.5
   typescript: 4.8.2
@@ -1802,12 +1800,6 @@ packages:
 
   /hash-sum/1.0.2:
     resolution: {integrity: sha512-fUs4B4L+mlt8/XAtSOGMUO1TXmAelItBPtJG7CyHJfYTdDjwisntGO2JQz7oUsatOY9o68+57eziUVNw/mRHmA==}
-    dev: true
-
-  /hazel-plus/0.0.6:
-    resolution: {integrity: sha512-lcPCTDhE0a8cd0tWheege97+JlnzyYAb0jqxfeq+K3Ji6fFiqQbngs2DQrzQKP3yEuFBzMCsEvlY37iqGiGw2Q==}
-    dependencies:
-      vue: 3.2.37
     dev: true
 
   /ignore/5.2.0:

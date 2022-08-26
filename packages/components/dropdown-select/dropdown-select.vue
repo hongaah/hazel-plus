@@ -49,22 +49,22 @@
     dropIcon?: string // 选择器的放下图标
   }
 
-  // const props = withDefaults(defineProps<Props>(), {
-  //   selectOption: () => [],
-  //   selected: '',
-  //   foldIcon:
-  //     'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/X5PDtr6CwFtcywbFYA5FY7RXpE5h2Ed3.png',
-  //   dropIcon:
-  //     'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/PxF8xA64pfanTHKQBXJfR3iDQB4XNw5a.png',
-  // })
+  const props = withDefaults(defineProps<Props>(), {
+    selectOption: () => [],
+    selected: '',
+    foldIcon:
+      'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/X5PDtr6CwFtcywbFYA5FY7RXpE5h2Ed3.png',
+    dropIcon:
+      'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/PxF8xA64pfanTHKQBXJfR3iDQB4XNw5a.png',
+  })
 
   // or 响应式语法糖 @实验
-  const {
-    selectOption = [],
-    selected = '',
-    foldIcon = 'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/X5PDtr6CwFtcywbFYA5FY7RXpE5h2Ed3.png',
-    dropIcon = 'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/PxF8xA64pfanTHKQBXJfR3iDQB4XNw5a.png',
-  } = defineProps<Props>()
+  // const {
+  //   selectOption = [],
+  //   selected = '',
+  //   foldIcon = 'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/X5PDtr6CwFtcywbFYA5FY7RXpE5h2Ed3.png',
+  //   dropIcon = 'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/PxF8xA64pfanTHKQBXJfR3iDQB4XNw5a.png',
+  // } = defineProps<Props>()
 
   defineOptions({
     name: 'HzDropdownSelect',
@@ -72,7 +72,9 @@
 
   const isSelecting = ref(false)
   const selectedLabel = computed(
-    () => selectOption.filter(item => item.value === selected)?.[0]?.label
+    () =>
+      props.selectOption.filter(item => item.value === props.selected)?.[0]
+        ?.label
   )
 
   function toggleSelectStatus() {
@@ -96,12 +98,14 @@
   }
 
   .selected-item {
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 42px;
     padding: 0 20px;
     box-sizing: border-box;
     background: #ffffff;
-    z-index: 9999;
+    z-index: 9;
 
     .selcted-label {
       margin-right: 4px;
@@ -126,7 +130,7 @@
     width: 100%;
     height: calc(100vh - 42px);
     background: rgba(0, 0, 0, 0.6);
-    z-index: 9999;
+    z-index: 9;
 
     .selected-option {
       @extend .selected-item;

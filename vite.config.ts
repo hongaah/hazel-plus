@@ -23,8 +23,7 @@ export default defineConfig({
       { find: /^~/, replacement: '' },
       { find: '@', replacement: '/packages' },
       { find: '@hazel-plus', replacement: '/packages' },
-      { find: '@hazel-plus/ui', replacement: '/packages/components' },
-      { find: '@hazel-plus/hook', replacement: '/packages/hooks' },
+      { find: 'hazel-plus', replacement: '/packages/hazel-plus/index.ts' },
     ],
   },
   build: {

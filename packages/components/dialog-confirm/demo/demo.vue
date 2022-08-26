@@ -26,10 +26,10 @@
 </template>
 
 <script setup lang="ts">
-  import { HzDialogConfirm } from '../../index'
-  import { HzDialogConfirm as HzDialogCustom } from '../../index'
-  // import { hzDialogConfirm } from 'hazel-plus'
-  // import { hzDialogConfirm as hzDialogCustom } from 'hazel-plus'
+  // import { HzDialogConfirm } from '../../index'
+  // import { HzDialogConfirm as HzDialogCustom } from '../../index'
+  import { HzDialogConfirm } from 'hazel-plus'
+  import { HzDialogConfirm as HzDialogCustom } from 'hazel-plus'
   import { ref } from 'vue'
 
   const isShowBasicDialog = ref(false)
