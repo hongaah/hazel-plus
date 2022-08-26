@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "initial": "npx initial-scan .docs --srcDir packages",
-    "docs:dev": "npm run initial && vitepress dev .docs --host",
+    "docs:dev": "vitepress dev .docs --host",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "dev": "vite --host",
