@@ -3,7 +3,7 @@
     "target": "es2018",
     "module": "esnext",
     "baseUrl": ".",
-    "sourceMap": false,
+    "sourceMap": true,
     "moduleResolution": "node",
     "allowJs": false,
     "strict": true,
@@ -14,7 +14,7 @@
     "esModuleInterop": true,
     "removeComments": false,
     "rootDir": ".",
-    "types": ["unplugin-vue-define-options"],
+    // "types": ["unplugin-vue-define-options"],
     "outDir": "./.type",
     "paths": {
       "@/*": ["packages/*"],
@@ -22,5 +22,6 @@
       "hazel-plus": ["packages/hazel-plus/index.ts"]
     }
   },
-  "include": ["packages", "typings/components.d.ts", "typings/env.d.ts", "docs"]
+  "include": ["packages"],
+  "exclude": ["node_modules"]
 }

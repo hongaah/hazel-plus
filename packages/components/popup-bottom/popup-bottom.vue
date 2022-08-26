@@ -28,11 +28,15 @@
     title?: string
   }
 
-  defineOptions({
-    name: 'HzPopupBottom',
-  })
+  // defineOptions({
+  //   name: 'HzPopupBottom',
+  // })
 
-  const { showCloseIcon = false, title = '' } = defineProps<Props>()
+  // const { showCloseIcon = false, title = '' } = defineProps<Props>()
+  withDefaults(defineProps<Props>(), {
+    showCloseIcon: false,
+    title: '',
+  })
 
   const emit = defineEmits(['closeModal'])
   function handleClose() {

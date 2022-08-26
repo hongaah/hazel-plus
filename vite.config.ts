@@ -28,7 +28,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: resolve(__dirname, 'packages'),
+      entry: resolve(__dirname, 'packages/hazel-plus'),
       name: 'hazel',
       formats: ['cjs', 'es'],
       fileName: format => {
