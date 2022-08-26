@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 import vue from '@vitejs/plugin-vue'
 import dts from 'vite-plugin-dts'
 import { resolve } from 'path'
@@ -10,6 +11,7 @@ export default defineConfig({
     vue({
       reactivityTransform: true,
     }),
+    DefineOptions(),
     dts({
       outputDir: './dist/types',
       skipDiagnostics: false,
@@ -19,6 +21,7 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: /^~/, replacement: '' },
+      { find: '@', replacement: '/packages' },
       { find: '@hazel-plus', replacement: '/packages' },
       { find: '@hazel-plus/ui', replacement: '/packages/components' },
       { find: '@hazel-plus/hook', replacement: '/packages/hooks' },

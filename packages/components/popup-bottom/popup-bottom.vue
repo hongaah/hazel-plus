@@ -27,6 +27,11 @@
     showCloseIcon?: boolean
     title?: string
   }
+
+  defineOptions({
+    name: 'HzPopupBottom',
+  })
+
   const { showCloseIcon = false, title = '' } = defineProps<Props>()
 
   const emit = defineEmits(['closeModal'])

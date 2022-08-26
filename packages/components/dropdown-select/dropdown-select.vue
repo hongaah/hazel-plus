@@ -66,6 +66,10 @@
     dropIcon = 'https://cnhqvztoss02.qdama.cn//electricityManagement/20224/PxF8xA64pfanTHKQBXJfR3iDQB4XNw5a.png',
   } = defineProps<Props>()
 
+  defineOptions({
+    name: 'HzDropdownSelect',
+  })
+
   const isSelecting = ref(false)
   const selectedLabel = computed(
     () => selectOption.filter(item => item.value === selected)?.[0]?.label

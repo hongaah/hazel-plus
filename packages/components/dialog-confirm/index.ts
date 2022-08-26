@@ -3,5 +3,5 @@ import { withInstall } from '../../utils/vue/install'
 
 import DialogConfirm from './dialog-confirm.vue'
 
-export const HazelDialogConfirm = withInstall(DialogConfirm)
-export default HazelDialogConfirm
+export const HzDialogConfirm = withInstall(DialogConfirm)
+export default HzDialogConfirm

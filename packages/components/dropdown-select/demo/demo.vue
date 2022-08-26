@@ -1,13 +1,13 @@
 <template>
-  <hazel-dropdown-select
+  <hz-dropdown-select
     v-model:selected="selected"
     :selectOption="selectOption"
-  ></hazel-dropdown-select>
+  ></hz-dropdown-select>
 </template>
 
 <script setup lang="ts">
-  // import { HazelDropdownSelect } from '../../index'
-  import { HazelDropdownSelect } from 'hazel-plus'
+  import { HzDropdownSelect } from '../../index'
+  // import { HzDropdownSelect } from 'hazel-plus'
   import { ref } from 'vue'
 
   const selected = ref('carrot')

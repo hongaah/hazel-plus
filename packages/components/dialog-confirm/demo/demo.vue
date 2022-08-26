@@ -7,14 +7,14 @@
   </button>
 
   <!-- 默认提示模态框 -->
-  <hazel-dialog-confirm
+  <hz-dialog-confirm
     :isShowTip="isShowBasicDialog"
     @confirmTip="isShowBasicDialog = false"
     content="开票金额规则说明：运费金额、积分抵扣金额，第三方代金券等不支持开票"
     confirmBtn="好的，我知道了"
-  ></hazel-dialog-confirm>
+  ></hz-dialog-confirm>
 
-  <hazel-dialog-custom :isShowTip="isShowCustomDialog">
+  <hz-dialog-custom :isShowTip="isShowCustomDialog">
     <div class="confirm-wrap">
       <div class="confirm-title">兑换规则</div>
       <div class="confirm-content">没有规则</div>
@@ -22,14 +22,14 @@
         好的，我知道了
       </div>
     </div>
-  </hazel-dialog-custom>
+  </hz-dialog-custom>
 </template>
 
 <script setup lang="ts">
-  // import { HazelDialogConfirm } from '../../index'
-  // import { HazelDialogConfirm as HazelDialogCustom } from '../../index'
-  import { HazelDialogConfirm } from 'hazel-plus'
-  import { HazelDialogConfirm as HazelDialogCustom } from 'hazel-plus'
+  import { HzDialogConfirm } from '../../index'
+  import { HzDialogConfirm as HzDialogCustom } from '../../index'
+  // import { hzDialogConfirm } from 'hazel-plus'
+  // import { hzDialogConfirm as hzDialogCustom } from 'hazel-plus'
   import { ref } from 'vue'
 
   const isShowBasicDialog = ref(false)

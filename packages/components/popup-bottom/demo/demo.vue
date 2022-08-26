@@ -4,7 +4,7 @@
   </button>
 
   <!-- 二次确认开票信息 -->
-  <hazel-popup-bottom
+  <hz-popup-bottom
     v-if="showSecondaryConfirm"
     @closeModal="showSecondaryConfirm = false"
     title="开票信息"
@@ -33,12 +33,14 @@
         确认提交
       </button>
     </template>
-  </hazel-popup-bottom>
+  </hz-popup-bottom>
 </template>
 
 <script setup lang="ts">
-  // import { HazelPopupBottom } from '../../index'
-  import { HazelPopupBottom } from 'hazel-plus'
+  import { HzPopupBottom } from '../../index'
+  // import { HzPopupBottom } from 'hazel-plus'
+  // import { HzPopupBottom } from '@hazel-plus/ui' // TODO
+
   import { ref } from 'vue'
 
   const showSecondaryConfirm = ref(false)

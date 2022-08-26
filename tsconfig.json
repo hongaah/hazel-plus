@@ -14,14 +14,18 @@
     "skipLibCheck": true,
     "outDir": "./.type",
     "declaration": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "types": ["unplugin-vue-define-options"]
     // "emitDeclarationOnly": true,
     // "declarationDir": "./.type"
   },
   "base": ".",
   "root": "./",
   "paths": {
-    "@": ["packages/*"]
+    "@": ["./packages/*"],
+    "@hazel-plus": ["./packages/*"],
+    "@hazel-plus/ui": ["./packages/components/*"],
+    "@hazel-plus/hook": ["./packages/hooks/*"]
   },
   "include": [
     "examples",

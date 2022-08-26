@@ -23,6 +23,10 @@
     confirmBtn?: string
   }
 
+  defineOptions({
+    name: 'HzDialogConfirm',
+  })
+
   withDefaults(defineProps<Props>(), {
     selectOption: false,
     content: '',
