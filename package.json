@@ -11,14 +11,14 @@
     "package.json"
   ],
   "scripts": {
-    "initial": "npx initial-scan .docs --srcDir packages ",
-    "docs:dev": "initial-scan && vitepress dev .docs --srcDir packages",
+    "initial": "npx initial-scan .docs --srcDir packages",
+    "docs:dev": "npm run initial && vitepress dev .docs --host",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "type": "vue-tsc",
-    "preview": "vite preview",
+    "preview": "vite preview --host",
     "eslint": "eslint src --ext .ts"
   },
   "dependencies": {
@@ -63,6 +63,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hongaah/hazel-ui"
+    "url": "https://github.com/hongaah/hazel-plus"
   }
 }

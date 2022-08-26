@@ -14,7 +14,7 @@ hero:
       link: /guide
     - theme: alt
       text: View on GitHub
-      link: https://github.com/hongaah/hazel-ui
+      link: https://github.com/hongaah/hazel-plus
 
 features:
   - title: "Vite: The DX that can't be beat"

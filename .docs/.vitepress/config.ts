@@ -25,7 +25,7 @@ export default defineConfig({
     logo: 'favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Hooks', link: '/useRequest' },
+      { text: 'Hooks', link: '/useRequest/' },
     ],
     sidebar: {
       '/': getSidebar(),
@@ -43,7 +43,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/hongaah/hazel-ui',
+        link: 'https://github.com/hongaah/hazel-plus',
       },
     ],
     search: true,
@@ -56,7 +56,11 @@ export default defineConfig({
     plugins: [genTemp()],
     resolve: {
       alias: {
-        'hazel-ui': resolve('./packages'),
+        '/^~/': resolve(''),
+        '@': resolve('/packages'),
+        '@hazel-plus': resolve('./packages'),
+        '@hazel-plus/ui': resolve('./packages/components'),
+        '@hazel-plus/hook': resolve('./packages/hooks'),
       },
     },
   },
@@ -90,7 +94,7 @@ function getSidebar() {
       items: [
         {
           text: '快速使用',
-          link: '/useRequest',
+          link: '/useRequest/',
         },
       ],
     },

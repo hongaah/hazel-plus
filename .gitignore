@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 .type
+.docs
+.cache
+.temp
