@@ -1,12 +1,13 @@
 import { defineConfig } from 'vitepress'
 // import { version } from '../../package.json'
+import DefineOptions from 'unplugin-vue-define-options/vite'
 import { applyPlugins } from '@ruabick/md-demo-plugins'
 import { genTemp } from '@ruabick/vite-plugin-gen-temp'
 
 const { resolve } = require('path')
 
 export default defineConfig({
-  title: 'Hazel UI',
+  title: 'Hazel plus',
   description: 'A custom components and hooks Library based on Vue 3',
   lang: 'zh-CN',
   head: [
@@ -25,7 +26,7 @@ export default defineConfig({
     logo: 'favicon.ico',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Hooks', link: '/useRequest/' },
+      { text: '文档', link: '/guide' },
     ],
     sidebar: {
       '/': getSidebar(),
@@ -53,7 +54,7 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [genTemp()],
+    plugins: [genTemp(), DefineOptions()],
     resolve: {
       alias: {
         '/^~/': resolve(''),
@@ -89,12 +90,30 @@ function getSidebar() {
       ],
     },
     {
-      text: 'useRequest',
+      text: 'components',
       collapsible: true,
       items: [
         {
-          text: '快速使用',
-          link: '/useRequest/',
+          text: 'DialogConfirm 确认弹框',
+          link: '/components/DialogConfirm/',
+        },
+        {
+          text: 'DropdownSelect 下拉框',
+          link: '/components/DropdownSelect/',
+        },
+        {
+          text: 'PopupBottom 底部弹框',
+          link: '/components/PopupBottom/',
+        },
+      ],
+    },
+    {
+      text: 'hooks',
+      collapsible: true,
+      items: [
+        {
+          text: 'useRequest',
+          link: '/hooks/useRequest/',
         },
       ],
     },

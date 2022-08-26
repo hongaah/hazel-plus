@@ -5,7 +5,7 @@ title: index
 titleTemplate: Vite & Vue Powered Static Site Generator
 
 hero:
-  name: Hazel UI
+  name: Hazel PLUS
   text: A custom components and hooks Library
   tagline: Simple, powerful, and performant.
   actions:

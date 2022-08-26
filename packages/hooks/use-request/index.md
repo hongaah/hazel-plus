@@ -1,7 +1,7 @@
 ---
 map:
   # 映射到docs的路径
-  path: /useRequest/
+  path: /hooks/useRequest
 ---
 
 # useRequest
@@ -23,3 +23,9 @@ map:
 - loading delay
 - SWR(stale-while-revalidate)
 - 缓存
+
+<demo src="./demo/demo.vue"
+  language="vue"
+  title="基本用法"
+  desc="useRequest">
+</demo>
