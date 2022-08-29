@@ -1,8 +1,3 @@
----
-map:
-  path: /components/DialogConfirm
----
-
 # DialogConfirm 确认弹框
 
 ## 介绍
@@ -21,7 +16,7 @@ import { HzDialogConfirm as HzDialogCustom } from 'hazel-plus'
 <demo src="./demo/demo.vue"
   language="vue"
   title="基本用法"
-  desc="默认提示模态框 & 自定义提示模态框">
+  desc="DialogConfirm">
 </demo>
 
 ## API

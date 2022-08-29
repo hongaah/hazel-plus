@@ -38,3 +38,5 @@ import { HzDialogConfirm } from 'hazel-plus'
 import { HzDropdownSelect } from 'hazel-plus'
 import { HzPopupBottom } from 'hazel-plus'
 ```
+
+Visit the [documentation](https://hongaah.github.io/hazel-plus/) for more details.
