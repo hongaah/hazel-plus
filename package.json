@@ -1,7 +1,7 @@
 {
   "name": "hazel-plus",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/js/index.es.js",
   "module": "dist/js/index.cjs.js",
   "types": "dist/types/hazel-plus/index.d.ts",
@@ -13,8 +13,8 @@
   "scripts": {
     "initial": "npx initial-scan .docs --srcDir packages",
     "docs:dev": "vitepress dev .docs --host",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
+    "docs:build": "vitepress build .docs --host",
+    "docs:serve": "vitepress serve .docs --host",
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "type": "vue-tsc",
@@ -59,7 +59,9 @@
   },
   "keywords": [
     "ui",
-    ""
+    "components",
+    "hooks",
+    "vue3"
   ],
   "repository": {
     "type": "git",
