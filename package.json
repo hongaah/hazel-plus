@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "main": "dist/js/index.es.js",
   "module": "dist/js/index.cjs.js",
-  "types": "dist/types/packages/index.d.ts",
+  "types": "dist/types/hazel-plus/index.d.ts",
   "type": "commonjs",
   "files": [
     "dist",
