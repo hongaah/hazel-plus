@@ -7,7 +7,7 @@
         v-if="showCloseIcon"
         @click.stop="handleClose"
         class="icon-close"
-        src="@/icons/icon-close-gray.png"
+        src="https://cnhqvztoss02.qdama.cn//electricityManagement/20228/fAG8QDMSiFXp6MmD8c22zA8ttt6JdhBd.png"
       />
       <div v-if="title" class="popup-title">
         <span>{{ title }}</span>

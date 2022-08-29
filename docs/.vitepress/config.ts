@@ -65,7 +65,6 @@ export default defineConfig({
     },
   },
   markdown: {
-    lineNumbers: true,
     config: md => {
       applyPlugins(md)
     },

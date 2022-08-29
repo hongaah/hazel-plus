@@ -80,11 +80,12 @@
   function toggleSelectStatus() {
     isSelecting.value = !isSelecting.value
   }
-  const emit = defineEmits(['update:selected'])
+  const emit = defineEmits(['update:selected', 'change'])
 
   function confirmSelect(item: Options) {
     isSelecting.value = false
     emit('update:selected', item.value)
+    emit('change', item)
   }
 </script>
 
