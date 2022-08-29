@@ -10,12 +10,26 @@
 ## 📦 Install
 
 ```
-$ pnpm install --prod hazel-plus
+# using npm to install
+$ npm i hazel-plus
+
+# using pnpm to install
+$ pnpm add hazel-plus
 ```
 
-## 🔨 Usage
+## 🧨 Quickstart
 
-```typescript
+1. Import the components style
+
+```ts:main.ts
+// main.ts
+import { createApp } from 'vue'
+import 'hazel-plus/dist/style.css'
+```
+
+2. Import the components or hooks you need on demand
+
+```typescript:xx.vue
 // hooks
 import { useRequest } from 'hazel-plus'
 
