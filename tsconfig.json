@@ -8,6 +8,7 @@
     "allowJs": false,
     "strict": true,
     "jsx": "preserve",
+    "skipLibCheck": true,
     "noUnusedLocals": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
