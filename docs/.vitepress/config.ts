@@ -10,7 +10,6 @@ export default defineConfig({
   title: 'Hazel plus',
   description: 'A custom components and hooks Library based on Vue 3',
   lang: 'zh-CN',
-  base: 'hazel-plus',
   head: [
     [
       'link',
