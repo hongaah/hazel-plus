@@ -15,8 +15,7 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/hongaah/hazel-plus
-
-features:
-  - title:
-    details:
+# features:
+#   - title:
+#     details:
 ---
