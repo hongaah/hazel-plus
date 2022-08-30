@@ -55,7 +55,10 @@ export default defineConfig({
     },
   },
   vite: {
-    plugins: [genTemp(), DefineOptions()],
+    plugins: [
+      process.env.NODE_ENV === 'production' ? null : genTemp(),
+      DefineOptions(),
+    ],
     resolve: {
       alias: {
         '/^~/': resolve(''),
@@ -67,6 +70,7 @@ export default defineConfig({
   },
   markdown: {
     config: md => {
+      if (process.env.NODE_ENV === 'production') return
       applyPlugins(md)
     },
     theme: {
