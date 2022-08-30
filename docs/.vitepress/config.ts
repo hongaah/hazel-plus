@@ -70,7 +70,6 @@ export default defineConfig({
   },
   markdown: {
     config: md => {
-      if (process.env.NODE_ENV === 'production') return
       applyPlugins(md)
     },
     theme: {
