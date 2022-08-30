@@ -13,7 +13,7 @@
   "scripts": {
     "initial": "initial-scan .docs --srcDir packages && npx rimraf .docs/node_modules",
     "docs:dev": "npm run initial && vitepress dev .docs --host",
-    "docs:build": "npm run initial && vitepress build .docs --host",
+    "docs:build": "vitepress build .docs --host",
     "docs:serve": "vitepress serve .docs --host",
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
