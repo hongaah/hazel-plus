@@ -17,6 +17,7 @@ specifiers:
   eslint-plugin-prettier: ^4.2.1
   eslint-plugin-vue: ^9.3.0
   prettier: ^2.7.1
+  rimraf: ^3.0.2
   sass: ^1.54.4
   typescript: ^4.6.4
   unplugin-vue-define-options: 0.11.0-alpha.0
@@ -47,6 +48,7 @@ devDependencies:
   eslint-plugin-prettier: 4.2.1_i2cojdczqdiurzgttlwdgf764e
   eslint-plugin-vue: 9.4.0_eslint@8.22.0
   prettier: 2.7.1
+  rimraf: 3.0.2
   sass: 1.54.5
   typescript: 4.8.2
   unplugin-vue-define-options: 0.11.0-alpha.0_vite@3.0.9+vue@3.2.37
