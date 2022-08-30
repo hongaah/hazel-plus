@@ -3,7 +3,7 @@ name: hazel-plus Deploy
 on:
   push:
     branches:
-      - config-deploy
+      - main
 
 jobs:
   deploy:
