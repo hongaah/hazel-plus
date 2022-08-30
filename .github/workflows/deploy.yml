@@ -19,10 +19,11 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
 
+      - name: Initial
+        run: pnpm initial
+
       - name: Build
-        run: |
-          pnpm initial
-          pnpm docs:build
+        run: pnpm docs:build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
