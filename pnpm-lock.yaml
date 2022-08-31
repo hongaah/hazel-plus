@@ -10,7 +10,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.33.0
   '@vitejs/plugin-vue': ^3.0.0
   '@vue-hooks-plus/md-demo-plugins': ^1.0.0
-  '@vue-hooks-plus/vite-plugin-gen-temp': ^1.1.0
+  '@vue-hooks-plus/vite-plugin-gen-temp': 1.4.0
   '@vue-hooks-plus/vitepress-demo-block': ^1.0.0
   eslint: ^8.21.0
   eslint-config-prettier: ^8.5.0
@@ -41,7 +41,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.35.1_shit3uhl6a7megkzgoz6xssnfa
   '@vitejs/plugin-vue': 3.0.3_vite@3.0.9+vue@3.2.37
   '@vue-hooks-plus/md-demo-plugins': 1.0.0_sass@1.54.5
-  '@vue-hooks-plus/vite-plugin-gen-temp': 1.1.0_sass@1.54.5
+  '@vue-hooks-plus/vite-plugin-gen-temp': 1.4.0_sass@1.54.5
   '@vue-hooks-plus/vitepress-demo-block': 1.0.0
   eslint: 8.22.0
   eslint-config-prettier: 8.5.0_eslint@8.22.0
@@ -710,8 +710,8 @@ packages:
       - stylus
     dev: true
 
-  /@vue-hooks-plus/vite-plugin-gen-temp/1.1.0_sass@1.54.5:
-    resolution: {integrity: sha512-PCF21xbdA0pWGqKrQKLUJMWErQs9umGJLMRZ8ZKLokPfcKM83Q3gOZVhVksTb1+eVAPgsUfpgDGVHszVZdRbXg==}
+  /@vue-hooks-plus/vite-plugin-gen-temp/1.4.0_sass@1.54.5:
+    resolution: {integrity: sha512-i6kPMlo+VQtT/1IeGuiCVqn3jbv+KnqK33FUKeJIvDHbRUuXsMlBijD3XnUXvzdqKXalQlz8GSjyAhL1/qrn6w==}
     hasBin: true
     dependencies:
       chokidar: 3.5.3

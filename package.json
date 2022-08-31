@@ -34,7 +34,7 @@
     "@typescript-eslint/parser": "^5.33.0",
     "@vitejs/plugin-vue": "^3.0.0",
     "@vue-hooks-plus/md-demo-plugins": "^1.0.0",
-    "@vue-hooks-plus/vite-plugin-gen-temp": "^1.1.0",
+    "@vue-hooks-plus/vite-plugin-gen-temp": "1.4.0",
     "@vue-hooks-plus/vitepress-demo-block": "^1.0.0",
     "eslint": "^8.21.0",
     "eslint-config-prettier": "^8.5.0",

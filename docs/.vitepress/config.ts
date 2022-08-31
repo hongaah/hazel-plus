@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 // import { version } from '../../package.json'
 import DefineOptions from 'unplugin-vue-define-options/vite'
 import { applyPlugins } from '@ruabick/md-demo-plugins'
-import { genTemp } from '@ruabick/vite-plugin-gen-temp'
+import { genTemp } from '@vue-hooks-plus/vite-plugin-gen-temp'
 
 const { resolve } = require('path')
 
@@ -56,7 +56,11 @@ export default defineConfig({
   },
   vite: {
     plugins: [
-      process.env.NODE_ENV === 'production' ? null : genTemp(),
+      process.env.NODE_ENV === 'production'
+        ? null
+        : genTemp({
+            srcDir: 'packages',
+          }),
       DefineOptions(),
     ],
     resolve: {
