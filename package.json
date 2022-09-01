@@ -1,15 +1,14 @@
 {
   "name": "hazel-plus",
+  "description": "A custom components and hooks Library",
   "private": false,
   "version": "0.1.1",
-  "main": "dist/js/index.es.js",
-  "module": "dist/js/index.cjs.js",
+  "main": "dist/js/index.cjs.js",
+  "module": "dist/js/index.es.js",
+  "unpkg": "dist/js/index.umd.js",
+  "style": "dist/style.css",
   "types": "dist/types/hazel-plus/index.d.ts",
-  "type": "commonjs",
-  "files": [
-    "dist",
-    "package.json"
-  ],
+  "files": ["dist"],
   "scripts": {
     "initial": "initial-scan .docs --srcDir packages && npx rimraf .docs/node_modules",
     "docs:dev": "npm run initial && vitepress dev .docs --host",
@@ -18,9 +17,10 @@
     "dev": "vite --host",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview --host",
-    "eslint": "eslint src --ext .ts",
+    "eslint": "eslint . --ext .ts",
     "prepare": "husky install",
-    "type": "tsc"
+    "type": "tsc",
+    "release": "standard-version"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -36,7 +36,6 @@
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "@vitejs/plugin-vue": "^3.0.0",
-    "husky": "^8.0.1",
     "@vue-hooks-plus/md-demo-plugins": "^1.0.0",
     "@vue-hooks-plus/vite-plugin-gen-temp": "1.4.0",
     "@vue-hooks-plus/vitepress-demo-block": "^1.0.0",
@@ -44,9 +43,11 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "sass": "^1.54.4",
+    "standard-version": "^9.5.0",
     "typescript": "^4.6.4",
     "unplugin-vue-define-options": "0.11.0-alpha.0",
     "vite": "^3.0.0",
@@ -71,5 +72,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/hongaah/hazel-plus"
-  }
+  },
+  "homepage": "https://hongaah.github.io/hazel-plus/"
 }

@@ -30,7 +30,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'packages/hazel-plus'),
       name: 'hazel',
-      formats: ['cjs', 'es'],
+      formats: ['cjs', 'es', 'umd'],
       fileName: format => {
         return `js/index.${format}.js`
       },

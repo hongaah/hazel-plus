@@ -1,4 +1,4 @@
-name: hazel-plus Deploy
+name: Docs Website Deploy
 
 on:
   push:

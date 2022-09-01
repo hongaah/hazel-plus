@@ -25,26 +25,7 @@ module.exports = {
   rules: {
     'no-sparse-arrays': 0,
     'no-inner-declarations': 0,
-    'prettier/prettier': 2,
-    '@typescript-eslint/indent': 0,
     'no-constant-condition': 0,
-    '@typescript-eslint/no-empty-function': 0,
-    '@typescript-eslint/explicit-member-accessibility': [
-      2,
-      { accessibility: 'no-public' },
-    ],
-    '@typescript-eslint/no-non-null-assertion': 0,
-    // '@typescript-eslint/explicit-function-return-type': [
-    //   1,
-    //   { allowExpressions: true },
-    // ],
-    '@typescript-eslint/no-use-before-define': [2, { functions: false }],
-    '@typescript-eslint/no-namespace': 0,
-    '@typescript-eslint/ban-ts-ignore': 0,
-    '@typescript-eslint/no-empty-interface': 1,
-    '@typescript-eslint/camelcase': 0,
-    '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-var-requires': 0,
     'no-unused-vars': [
       2,
       {
@@ -54,7 +35,22 @@ module.exports = {
         args: 'none',
       },
     ],
+    '@typescript-eslint/indent': 0,
+    '@typescript-eslint/no-empty-function': 0,
+    '@typescript-eslint/explicit-member-accessibility': [
+      2,
+      { accessibility: 'no-public' },
+    ],
+    '@typescript-eslint/no-non-null-assertion': 0,
+    '@typescript-eslint/no-use-before-define': [2, { functions: false }],
+    '@typescript-eslint/no-namespace': 0,
+    '@typescript-eslint/ban-ts-ignore': 0,
+    '@typescript-eslint/no-empty-interface': 1,
+    '@typescript-eslint/camelcase': 0,
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/no-var-requires': 0,
     'node/no-callback-literal': 'off',
+    'prettier/prettier': 2,
     'import/namespace': 'off',
     'import/default': 'off',
     'import/no-named-as-default': 'off',
@@ -63,13 +59,7 @@ module.exports = {
 
   overrides: [
     {
-      files: [
-        '**/*.md',
-        '**/*.md/*.*',
-        'demo.vue',
-        'scripts/*.ts',
-        '*.test.ts',
-      ],
+      files: ['**/*.md', '**/*.md/*.*', 'examples'],
       rules: {
         'no-alert': 'off',
         'no-console': 'off',
@@ -78,12 +68,6 @@ module.exports = {
         'no-restricted-imports': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
         '@typescript-eslint/no-redeclare': 'off',
-      },
-    },
-    {
-      files: ['packages/.vitepress/**/*.*'],
-      rules: {
-        'no-restricted-imports': 'off',
       },
     },
   ],
