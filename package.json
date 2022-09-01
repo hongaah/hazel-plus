@@ -2,13 +2,15 @@
   "name": "hazel-plus",
   "description": "A custom components and hooks Library",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/js/index.cjs.js",
   "module": "dist/js/index.es.js",
   "unpkg": "dist/js/index.umd.js",
   "style": "dist/style.css",
   "types": "dist/types/hazel-plus/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "initial": "initial-scan .docs --srcDir packages && npx rimraf .docs/node_modules",
     "docs:dev": "npm run initial && vitepress dev .docs --host",
