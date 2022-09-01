@@ -7,7 +7,7 @@ map:
 
 ## 介绍
 
-传一个变量可以控制弹框的显隐，支持自定义内容
+传一个变量控制弹框的显隐，支持自定义内容
 
 ## 引入
 
@@ -21,7 +21,7 @@ import { HzDialogConfirm as HzDialogCustom } from 'hazel-plus'
 <demo src="./demo/demo.vue"
   language="vue"
   title="基本用法"
-  desc="默认提示模态框 & 自定义提示模态框">
+  desc="">
 </demo>
 
 ## API

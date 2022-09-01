@@ -1,6 +1,6 @@
 # Hazel plus
 
-> A custom components and hooks Library
+A custom components and hooks Library
 
 ## ✨ Features
 
