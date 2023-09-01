@@ -33,6 +33,7 @@
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@hazel-plus/hooks": "workspace:^0.1.0",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
     "@ruabick/md-demo-plugins": "^0.2.4",
