@@ -23,7 +23,7 @@ input {
   background-color: var(--vp-code-block-bg);
 }
 
-button {
+button[class='btn'] {
   border: 1px solid #dcdfe6;
   padding: 0 5px;
   margin-right: 5px;
