@@ -2,11 +2,11 @@
   <div>自动请求：{{ result1 }}</div>
   <div>
     成功请求：{{ success }}
-    <button @click="getSuccessResult">获取</button>
+    <button class="btn" @click="getSuccessResult">获取</button>
   </div>
   <div>
     错误请求：{{ error }}
-    <button @click="getErrorResult">获取</button>
+    <button class="btn" @click="getErrorResult">获取</button>
   </div>
 </template>
 

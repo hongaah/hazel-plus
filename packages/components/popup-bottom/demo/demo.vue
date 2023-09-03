@@ -1,5 +1,5 @@
 <template>
-  <button @click="showSecondaryConfirm = !showSecondaryConfirm">
+  <button class="btn" @click="showSecondaryConfirm = !showSecondaryConfirm">
     查看开票信息
   </button>
 

@@ -1,8 +1,8 @@
 <template>
-  <button @click="isShowBasicDialog = !isShowBasicDialog">
+  <button class="btn" @click="isShowBasicDialog = !isShowBasicDialog">
     默认提示模态框
   </button>
-  <button @click="isShowCustomDialog = !isShowCustomDialog">
+  <button class="btn" @click="isShowCustomDialog = !isShowCustomDialog">
     自定义提示模态框
   </button>
 
