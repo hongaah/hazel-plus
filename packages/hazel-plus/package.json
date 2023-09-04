@@ -14,13 +14,6 @@
   "peerDependencies": {
     "vue": "^3.2.37"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
-    }
-  },
   "keywords": [
     "ui",
     "components",
