@@ -1,0 +1,29 @@
+{
+  "name": "@hazel-plus/hooks",
+  "private": false,
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+		"dist",
+		"LICENSE",
+		"package.json",
+		"README.md"
+	],
+  "main": "./dist/hooks.cjs.js",
+	"module": "./dist/hooks.es.js",
+  "types":"./dist/types/index.d.ts" ,
+  "scripts": {
+    "build": "vue-tsc --noEmit && vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.2.37"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hongaah/hazel-plus"
+  },
+  "homepage": "https://hongaah.github.io/hazel-plus/"
+}
