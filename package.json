@@ -17,7 +17,7 @@
     "docs:build": "vitepress build .docs",
     "docs:serve": "vitepress serve .docs --host",
     "dev": "vite --host",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": " vite build && cd packages/hooks && pnpm build",
     "preview": "vite preview --host",
     "eslint": "eslint . --ext .ts",
     "prepare": "husky install",

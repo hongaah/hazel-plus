@@ -3,11 +3,11 @@
   "description": "A custom components and hooks Library",
   "private": false,
   "version": "0.1.4",
-  "main": "dist/js/index.cjs.js",
-  "module": "dist/js/index.es.js",
-  "unpkg": "dist/js/index.umd.js",
-  "style": "dist/style.css",
-  "types": "dist/types/hazel-plus/index.d.ts",
+  "main": "./dist/js/index.cjs.js",
+  "module": "./dist/js/index.es.js",
+  "unpkg": "./dist/js/index.umd.js",
+  "style": "./dist/style.css",
+  "types": "./dist/types/hazel-plus/index.d.ts",
   "files": [
     "dist"
   ],

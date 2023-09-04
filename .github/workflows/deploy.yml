@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - test
 
 jobs:
   deploy:
@@ -21,6 +22,9 @@ jobs:
 
       - name: Initial
         run: pnpm initial
+
+      - name: Build Lib
+        run: pnpm build
 
       - name: Build
         run: pnpm docs:build
