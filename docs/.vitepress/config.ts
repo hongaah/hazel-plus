@@ -68,7 +68,7 @@ export default defineConfig({
         '/^~/': resolve(''),
         '@': resolve('/packages'),
         '@hazel-plus': resolve('./packages'),
-        'hazel-plus': resolve('./packages/hazel-plus'),
+        'hazel-plus': resolve('./packages/hazel-plus/index.ts'),
       },
     },
   },

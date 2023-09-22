@@ -13,7 +13,7 @@ export default defineConfig({
     }),
     DefineOptions(),
     dts({
-      outputDir: './dist/types',
+      outputDir: './packages/hazel-plus/dist/types',
       skipDiagnostics: false,
       logDiagnostics: true,
     }),
@@ -27,8 +27,9 @@ export default defineConfig({
     ],
   },
   build: {
+    outDir: './packages/hazel-plus/dist',
     lib: {
-      entry: resolve(__dirname, 'packages/hazel-plus'),
+      entry: resolve(__dirname, 'packages/hazel-plus/index.ts'),
       name: 'hazel',
       formats: ['cjs', 'es', 'umd'],
       fileName: format => {
