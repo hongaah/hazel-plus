@@ -17,7 +17,7 @@
     "docs:build": "vitepress build .docs",
     "docs:serve": "vitepress serve .docs --host",
     "dev": "vite --host",
-    "build": "vue-tsc --noEmit && pnpm build:hooks && vite build",
+    "build": "pnpm build:hooks && vue-tsc --noEmit &&  vite build",
     "build:hooks": "cd packages/hooks && pnpm build",
     "preview": "vite preview --host",
     "eslint": "eslint . --ext .ts",
@@ -31,7 +31,7 @@
     }
   },
   "dependencies": {
-    "@hazel-plus/hooks": "^0.1.0"
+    "@hazel-plus/hooks": "workspace:*"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
