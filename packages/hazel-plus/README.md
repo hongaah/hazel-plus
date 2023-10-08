@@ -21,7 +21,7 @@ $ pnpm add hazel-plus
 
 1. Import the components style
 
-```ts:main.ts
+```ts :main.ts
 // main.ts
 import { createApp } from 'vue'
 import 'hazel-plus/dist/style.css'
@@ -29,7 +29,7 @@ import 'hazel-plus/dist/style.css'
 
 2. Import the components or hooks you need on demand
 
-```typescript:xx.vue
+```typescript :xx.vue
 // hooks
 import { useRequest } from 'hazel-plus'
 
