@@ -12,8 +12,8 @@
 
 <script setup lang="ts">
   import { ref, computed } from 'vue'
-  // import { useRequest } from '../../index'
-  import { useRequest } from 'hazel-plus'
+  import { useRequest } from '../../index'
+  // import { useRequest } from '@hazel-plus/hooks'
 
   const error = ref()
 
@@ -41,10 +41,10 @@
   const { result: success, run: getSuccessResult } = useRequest(getData, {
     refreshDeps: computed(() => f.value),
     manual: true,
-    onSuccess(data) {
+    onSuccess(data: any) {
       console.log('success：', data)
     },
-    formatResult(data) {
+    formatResult(data: any) {
       return 'format：' + data
     },
   })
@@ -52,7 +52,7 @@
   // 错误回调
   const { run: getErrorResult } = useRequest(() => getData({ isError: true }), {
     manual: true,
-    onError(err) {
+    onError(err: any) {
       error.value = err
     },
   })

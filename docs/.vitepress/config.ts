@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 // import { version } from '../../package.json'
 import DefineOptions from 'unplugin-vue-define-options/vite'
-import { applyPlugins } from '@ruabick/md-demo-plugins'
+import { applyPlugins } from '@vue-hooks-plus/md-demo-plugins'
 import { genTemp } from '@vue-hooks-plus/vite-plugin-gen-temp'
 
 const { resolve } = require('path')
@@ -68,7 +68,7 @@ export default defineConfig({
         '/^~/': resolve(''),
         '@': resolve('/packages'),
         '@hazel-plus': resolve('./packages'),
-        'hazel-plus': resolve('./packages/hazel-plus'),
+        'hazel-plus': resolve('./packages/hazel-plus/index.ts'),
       },
     },
   },
