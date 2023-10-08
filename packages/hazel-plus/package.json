@@ -2,7 +2,7 @@
   "name": "hazel-plus",
   "description": "A custom components and hooks Library",
   "private": false,
-  "version": "0.1.4",
+  "version": "0.1.6",
   "main": "./dist/js/index.cjs.js",
   "module": "./dist/js/index.es.js",
   "unpkg": "./dist/js/index.umd.js",
