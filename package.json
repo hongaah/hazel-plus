@@ -7,6 +7,8 @@
     "initial": "initial-scan .docs --srcDir packages && npx rimraf .docs/node_modules",
     "docs:dev": "pnpm run initial && vitepress dev .docs --host",
     "docs:build": "vitepress build .docs",
+    "docs:gitpage": "npx cross-env site=gitpage vitepress build .docs",
+    "docs:vercel": "npx cross-env site=vercel vitepress build .docs",
     "docs:serve": "vitepress serve .docs --host",
     "dev": "vite --host",
     "build": "pnpm build:hooks && vue-tsc --noEmit &&  vite build",

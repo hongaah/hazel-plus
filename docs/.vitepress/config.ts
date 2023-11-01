@@ -5,12 +5,13 @@ import { applyPlugins } from '@vue-hooks-plus/md-demo-plugins'
 import { genTemp } from '@vue-hooks-plus/vite-plugin-gen-temp'
 
 const { resolve } = require('path')
+const site = process.env.site
 
 export default defineConfig({
   title: 'Hazel plus',
   description: 'A custom components and hooks Library based on Vue 3',
   lang: 'zh-CN',
-  base: '',
+  base: site === 'gitpage' ? '/hazel-plus' : '/',
   head: [
     [
       'link',
