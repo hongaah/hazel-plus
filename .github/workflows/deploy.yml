@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - monorepo
 
 jobs:
   deploy:
@@ -38,7 +37,7 @@ jobs:
         run: pnpm initial
 
       - name: Build docs
-        run: pnpm docs:build
+        run: pnpm docs:gitpage
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
